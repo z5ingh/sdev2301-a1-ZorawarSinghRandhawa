@@ -1,0 +1,14 @@
+C:\Users\zoraw\OneDrive\Desktop\SoftwareDevelopmentYear1\Winter2026\SDEV2301\Assignments\sdev2301-a1-ZorawarSinghRandhawa\bin\Debug\net10.0\sdev2301-a1-ZorawarSinghRandhawa.exe
+C:\Users\zoraw\OneDrive\Desktop\SoftwareDevelopmentYear1\Winter2026\SDEV2301\Assignments\sdev2301-a1-ZorawarSinghRandhawa\bin\Debug\net10.0\sdev2301-a1-ZorawarSinghRandhawa.deps.json
+C:\Users\zoraw\OneDrive\Desktop\SoftwareDevelopmentYear1\Winter2026\SDEV2301\Assignments\sdev2301-a1-ZorawarSinghRandhawa\bin\Debug\net10.0\sdev2301-a1-ZorawarSinghRandhawa.runtimeconfig.json
+C:\Users\zoraw\OneDrive\Desktop\SoftwareDevelopmentYear1\Winter2026\SDEV2301\Assignments\sdev2301-a1-ZorawarSinghRandhawa\bin\Debug\net10.0\sdev2301-a1-ZorawarSinghRandhawa.dll
+C:\Users\zoraw\OneDrive\Desktop\SoftwareDevelopmentYear1\Winter2026\SDEV2301\Assignments\sdev2301-a1-ZorawarSinghRandhawa\bin\Debug\net10.0\sdev2301-a1-ZorawarSinghRandhawa.pdb
+C:\Users\zoraw\OneDrive\Desktop\SoftwareDevelopmentYear1\Winter2026\SDEV2301\Assignments\sdev2301-a1-ZorawarSinghRandhawa\obj\Debug\net10.0\sdev2301-a1-ZorawarSinghRandhawa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zoraw\OneDrive\Desktop\SoftwareDevelopmentYear1\Winter2026\SDEV2301\Assignments\sdev2301-a1-ZorawarSinghRandhawa\obj\Debug\net10.0\sdev2301-a1-ZorawarSinghRandhawa.AssemblyInfoInputs.cache
+C:\Users\zoraw\OneDrive\Desktop\SoftwareDevelopmentYear1\Winter2026\SDEV2301\Assignments\sdev2301-a1-ZorawarSinghRandhawa\obj\Debug\net10.0\sdev2301-a1-ZorawarSinghRandhawa.AssemblyInfo.cs
+C:\Users\zoraw\OneDrive\Desktop\SoftwareDevelopmentYear1\Winter2026\SDEV2301\Assignments\sdev2301-a1-ZorawarSinghRandhawa\obj\Debug\net10.0\sdev2301-a1-ZorawarSinghRandhawa.csproj.CoreCompileInputs.cache
+C:\Users\zoraw\OneDrive\Desktop\SoftwareDevelopmentYear1\Winter2026\SDEV2301\Assignments\sdev2301-a1-ZorawarSinghRandhawa\obj\Debug\net10.0\sdev2301-a1-ZorawarSinghRandhawa.dll
+C:\Users\zoraw\OneDrive\Desktop\SoftwareDevelopmentYear1\Winter2026\SDEV2301\Assignments\sdev2301-a1-ZorawarSinghRandhawa\obj\Debug\net10.0\refint\sdev2301-a1-ZorawarSinghRandhawa.dll
+C:\Users\zoraw\OneDrive\Desktop\SoftwareDevelopmentYear1\Winter2026\SDEV2301\Assignments\sdev2301-a1-ZorawarSinghRandhawa\obj\Debug\net10.0\sdev2301-a1-ZorawarSinghRandhawa.pdb
+C:\Users\zoraw\OneDrive\Desktop\SoftwareDevelopmentYear1\Winter2026\SDEV2301\Assignments\sdev2301-a1-ZorawarSinghRandhawa\obj\Debug\net10.0\sdev2301-a1-ZorawarSinghRandhawa.genruntimeconfig.cache
+C:\Users\zoraw\OneDrive\Desktop\SoftwareDevelopmentYear1\Winter2026\SDEV2301\Assignments\sdev2301-a1-ZorawarSinghRandhawa\obj\Debug\net10.0\ref\sdev2301-a1-ZorawarSinghRandhawa.dll
