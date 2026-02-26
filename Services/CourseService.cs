@@ -6,7 +6,12 @@ namespace sdev2301_a1_ZorawarSinghRandhawa.Services;
 
 public class CourseService
 {
-    private readonly AppDbContext _db = new();
+    private readonly AppDbContext _db;
+
+    public CourseService(AppDbContext db)
+    {
+        _db = db;
+    }
     public async Task<Course> AddAsync(string code, string name, int credits)
     {
         if (credits <= 0)
