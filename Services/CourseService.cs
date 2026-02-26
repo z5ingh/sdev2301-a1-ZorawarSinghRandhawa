@@ -7,7 +7,6 @@ namespace sdev2301_a1_ZorawarSinghRandhawa.Services;
 public class CourseService
 {
     private readonly AppDbContext _db = new();
-
     public async Task<Course> AddAsync(string code, string name, int credits)
     {
         if (credits <= 0)
@@ -67,5 +66,26 @@ public class CourseService
 
         student.Courses.Remove(course);
         await _db.SaveChangesAsync();
+    }
+    public async Task<List<Student>> GetStudentsInCourseAsync(int courseId)
+    {
+        var course = await _db.Courses
+            .Include(c => c.Students)
+            .FirstOrDefaultAsync(c => c.Id == courseId);
+
+        if (course == null)
+            return new List<Student>();
+
+        return course.Students
+            .OrderBy(s => s.FullName)
+            .ToList();
+    }
+    public async Task<List<(string Code, int Count)>> GetEnrollmentCountsAsync()
+    {
+        return await _db.Courses
+            .Select(c => new ValueTuple<string, int>(
+                c.Code,
+                c.Students.Count))
+            .ToListAsync();
     }
 }
