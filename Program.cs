@@ -52,6 +52,27 @@ while (true)
             foreach (var c in courses)
                 Console.WriteLine($"{c.Id} - {c.Code} - {c.Name}");
             break;
+        case "5":
+            Console.Write("Student ID: ");
+            var sid = int.Parse(Console.ReadLine()!);
+
+            Console.Write("Course ID: ");
+            var cid = int.Parse(Console.ReadLine()!);
+
+            await courseService.EnrollStudentAsync(sid, cid);
+            Console.WriteLine("Enrollment successful!");
+            break;
+
+        case "6":
+            Console.Write("Student ID: ");
+            var dsid = int.Parse(Console.ReadLine()!);
+
+            Console.Write("Course ID: ");
+            var dcid = int.Parse(Console.ReadLine()!);
+
+            await courseService.DropStudentAsync(dsid, dcid);
+            Console.WriteLine("Dropped successfully!");
+            break;
 
         case "0":
             return;
