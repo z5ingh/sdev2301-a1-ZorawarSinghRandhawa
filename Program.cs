@@ -12,6 +12,8 @@ while (true)
     Console.WriteLine("4. List Courses");
     Console.WriteLine("5. Enroll Student in Course");
     Console.WriteLine("6. Drop Student from Course");
+    Console.WriteLine("7. Show Students in Course");
+    Console.WriteLine("8. Show Enrollment Counts");
     Console.WriteLine("0. Exit");
 
     Console.Write("Select option: ");
@@ -22,7 +24,6 @@ while (true)
         case "1":
             Console.Write("Enter student name: ");
             var name = Console.ReadLine();
-
             await studentService.AddAsync(name!, DateTime.Now);
             Console.WriteLine("Student added!");
             break;
@@ -52,6 +53,7 @@ while (true)
             foreach (var c in courses)
                 Console.WriteLine($"{c.Id} - {c.Code} - {c.Name}");
             break;
+
         case "5":
             Console.Write("Student ID: ");
             var sid = int.Parse(Console.ReadLine()!);
@@ -72,6 +74,26 @@ while (true)
 
             await courseService.DropStudentAsync(dsid, dcid);
             Console.WriteLine("Dropped successfully!");
+            break;
+
+        case "7":
+            Console.Write("Enter Course ID: ");
+            var courseId = int.Parse(Console.ReadLine()!);
+
+            var studentsInCourse = await courseService.GetStudentsInCourseAsync(courseId);
+
+            if (!studentsInCourse.Any())
+                Console.WriteLine("No students enrolled.");
+
+            foreach (var s in studentsInCourse)
+                Console.WriteLine($"{s.Id} - {s.FullName}");
+            break;
+
+        case "8":
+            var counts = await courseService.GetEnrollmentCountsAsync();
+
+            foreach (var c in counts)
+                Console.WriteLine($"{c.Code} → {c.Count} students");
             break;
 
         case "0":
