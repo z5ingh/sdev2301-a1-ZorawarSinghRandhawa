@@ -10,6 +10,8 @@ while (true)
     Console.WriteLine("2. List Students");
     Console.WriteLine("3. Add Course");
     Console.WriteLine("4. List Courses");
+    Console.WriteLine("5. Enroll Student in Course");
+    Console.WriteLine("6. Drop Student from Course");
     Console.WriteLine("0. Exit");
 
     Console.Write("Select option: ");
