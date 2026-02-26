@@ -8,13 +8,25 @@ public class AppDbContext : DbContext
     public DbSet<Student> Students => Set<Student>();
     public DbSet<Course> Courses => Set<Course>();
 
+    public AppDbContext()
+    {
+    }
+
+    public AppDbContext(DbContextOptions<AppDbContext> options)
+        : base(options)
+    {
+    }
+
     protected override void OnConfiguring(DbContextOptionsBuilder options)
-        => options.UseSqlite("Data Source=school.db");
+    {
+        if (!options.IsConfigured)
+            options.UseSqlite("Data Source=school.db");
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Course>()
-            .HasIndex(c => c.Code)
-            .IsUnique();
+        modelBuilder.Entity<Student>()
+            .HasMany(s => s.Courses)
+            .WithMany(c => c.Students);
     }
 }

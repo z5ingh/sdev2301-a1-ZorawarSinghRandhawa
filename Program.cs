@@ -5,7 +5,7 @@ using var db = new AppDbContext();
 db.Database.EnsureCreated();
 
 var studentService = new StudentService();
-var courseService = new CourseService();
+var courseService = new CourseService(db);
 
 while (true)
 {
