@@ -1,4 +1,9 @@
-﻿using sdev2301_a1_ZorawarSinghRandhawa.Services;
+﻿using sdev2301_a1_ZorawarSinghRandhawa.Data;
+using sdev2301_a1_ZorawarSinghRandhawa.Services;
+
+// 🔹 IMPORTANT: Ensure database + tables are created
+using var db = new AppDbContext();
+db.Database.EnsureCreated();
 
 var studentService = new StudentService();
 var courseService = new CourseService();
